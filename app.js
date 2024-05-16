@@ -6,8 +6,6 @@ const express =require("express")
 const cors = require("cors")
 const app = express()
 
-
- 
  
 app.use(express.json())
 
@@ -23,7 +21,8 @@ app.get('/', async (req, res) => {
 
 
 
-//////  routing will be here ///////
+//////////// routing will be here ///////////
+
 const routes = require("./routes.js")
 
 app.use("/",routes)
